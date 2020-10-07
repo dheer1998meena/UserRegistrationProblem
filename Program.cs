@@ -17,12 +17,11 @@ namespace UserRegistrationProgram
 
             Console.WriteLine("Enter the user last name :");
             string lastName = Console.ReadLine();
-            while (!details.FirstNameValidation(lastName))
+            while (!details.LastNameValidation(lastName))
             {
                 Console.WriteLine("Enter a valid last name : ");
                 lastName = Console.ReadLine();
             }
-
         }
     }
 }
