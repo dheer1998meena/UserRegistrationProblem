@@ -15,6 +15,14 @@ namespace UserRegistrationProgram
                 firstName = Console.ReadLine();
             }
 
+            Console.WriteLine("Enter the user last name :");
+            string lastName = Console.ReadLine();
+            while (!details.FirstNameValidation(lastName))
+            {
+                Console.WriteLine("Enter a valid last name : ");
+                lastName = Console.ReadLine();
+            }
+
         }
     }
 }
