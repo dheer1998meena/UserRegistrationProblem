@@ -41,7 +41,7 @@ namespace UserRegistrationProgram
         }
         public Boolean PasswordValidation(string password)
         {
-            Regex regex = new Regex("^(=?.*[A-Z]).{8,}$");
+            Regex regex = new Regex("^(?=.*[A-Z])(?=.*[0-9]).{8,}$");
             if (regex.IsMatch(password))
                 return true;
             else
