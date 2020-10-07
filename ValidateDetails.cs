@@ -7,10 +7,10 @@ namespace UserRegistrationProgram
 {
     class ValidateDetails
     {
-        public Boolean FirstNameValidation(string fname)
+        public Boolean FirstNameValidation(string firstName)
         {
             Regex regex = new Regex("^[A-Z][a-z]{2,}$");
-            if (regex.IsMatch(fname))
+            if (regex.IsMatch(firstName))
                 return true;
             else
                 return false;
