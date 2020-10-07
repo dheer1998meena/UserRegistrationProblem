@@ -46,6 +46,11 @@ namespace UserRegistrationProgram
                 Console.WriteLine("Enter a valid password : ");
                 password = Console.ReadLine();
             }
+
+            Console.WriteLine("Registration Successful.");
+            Console.WriteLine("Name :" + firstName + " " + lastName);
+            Console.WriteLine("Email ID : " + emailId);
+            Console.WriteLine("Mobile Number : " + mobileNumber);
         }
     }
 }
