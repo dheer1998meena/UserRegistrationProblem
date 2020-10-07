@@ -23,5 +23,13 @@ namespace UserRegistrationProgram
             else
                 return false;
         }
+        public Boolean EmailValidation(string emailId)
+        {
+            Regex regex = new Regex("^[a-zA-Z]+([.+_-][a-zA-Z0-9]+)*@[a-zA-Z0-9]+[.][a-zA-Z]+([.][a-zA-Z]{2})?$");
+            if (regex.IsMatch(emailId))
+                return true;
+            else
+                return false;
+        }
     }
 }
