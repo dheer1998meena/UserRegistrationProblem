@@ -39,5 +39,13 @@ namespace UserRegistrationProgram
             else
                 return false;
         }
+        public Boolean PasswordValidation(string password)
+        {
+            Regex regex = new Regex("^[a-zA-Z]{8,}$");
+            if (regex.IsMatch(password))
+                return true;
+            else
+                return false;
+        }
     }
 }
